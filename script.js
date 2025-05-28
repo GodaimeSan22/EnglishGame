@@ -186,8 +186,8 @@ function endGame() {
 }
 
 function restartGame() {
-  playerHP = 3;
-  enemyHP = 3;
+  playerHP = 15;
+  enemyHP = 25;
   current = 0;
 
   document.querySelector(".answers").style.display = "block";
