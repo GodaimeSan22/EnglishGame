@@ -1,26 +1,86 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  background-color: #f0f8ff;
+  background: linear-gradient(to bottom right, #1c1c2b, #2f2f46);
+  color: #ffffff;
+  margin: 0;
   padding: 20px;
 }
 
 .game-container {
-  max-width: 500px;
-  margin: 0 auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #aaa;
+  background-color: #2a2a3d;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  position: relative;
 }
 
-#enemy {
-  font-size: 2rem;
-  margin: 20px 0;
+h1 {
+  font-size: 1.8rem;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+#stats {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #cccccc;
+}
+
+#enemy-img {
+  width: 140px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+#question {
+  background-color: #1f1f2d;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #ffffff;
 }
 
 .answers button {
-  margin: 10px;
-  padding: 10px 20px;
+  background-color: #444466;
+  border: none;
+  color: #ffffff;
   font-size: 1rem;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.answers button:hover {
+  background-color: #5c5c8a;
+}
+
+#feedback {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+#restart-btn {
+  background-color: #ff5050;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s;
+}
+
+#restart-btn:hover {
+  background-color: #ff3333;
 }

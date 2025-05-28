@@ -8,15 +8,26 @@
 </head>
 <body>
   <div class="game-container">
-    <h1>🧠 English Battle Game 🛡️</h1>
-    <div id="enemy">👾 Enemy Appeared!</div>
-    <div id="question">What is the past tense of "go"?</div>
-    <div class="answers">
-      <button onclick="checkAnswer(this)">goed</button>
-      <button onclick="checkAnswer(this)">went</button>
-      <button onclick="checkAnswer(this)">goes</button>
+    <h1>🧠 English Battle: Present Perfect ⚔️</h1>
+
+    <div id="stats">
+      🧍 Player HP: <span id="player-hp">3</span> | 
+      👾 Enemy HP: <span id="enemy-hp">3</span>
     </div>
+
+    <img id="enemy-img" src="images/enemy1.png" alt="enemy" width="100" />
+
+    <div id="question">Loading question...</div>
+
+    <div class="answers">
+      <button onclick="checkAnswer(this)">Option 1</button>
+      <button onclick="checkAnswer(this)">Option 2</button>
+      <button onclick="checkAnswer(this)">Option 3</button>
+    </div>
+
     <div id="feedback"></div>
+
+    <button id="restart-btn" onclick="restartGame()">🔁 Restart Game</button>
   </div>
 
   <script src="script.js"></script>
