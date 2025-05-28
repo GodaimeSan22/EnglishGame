@@ -1,3 +1,4 @@
+
 const questions = [
   {
     question: "Have you ever visited London?",
@@ -23,12 +24,112 @@ const questions = [
     question: "Have we met before?",
     options: ["Yes, we did.", "Yes, we have.", "Yes, we do."],
     answer: "Yes, we have."
+  },
+  {
+    question: "Have you ever tried sushi?",
+    options: ["Yes, I have.", "No, I didn't.", "Yes, I do."],
+    answer: "Yes, I have."
+  },
+  {
+    question: "Has Tom finished reading the book?",
+    options: ["Yes, he has.", "Yes, he did.", "No, he haven't."],
+    answer: "Yes, he has."
+  },
+  {
+    question: "She ___ just left the office.",
+    options: ["have", "has", "had"],
+    answer: "has"
+  },
+  {
+    question: "Have they seen that movie yet?",
+    options: ["Yes, they have.", "Yes, they did.", "No, they don't."],
+    answer: "Yes, they have."
+  },
+  {
+    question: "I ___ never been so tired.",
+    options: ["have", "has", "am"],
+    answer: "have"
+  },
+  {
+    question: "Has John ever been to New York?",
+    options: ["Yes, he has.", "Yes, he did.", "No, he isn't."],
+    answer: "Yes, he has."
+  },
+  {
+    question: "Have you done your homework?",
+    options: ["Yes, I have.", "Yes, I did.", "No, I don't."],
+    answer: "Yes, I have."
+  },
+  {
+    question: "She ___ already cleaned her room.",
+    options: ["have", "has", "had"],
+    answer: "has"
+  },
+  {
+    question: "Have we started the project yet?",
+    options: ["Yes, we have.", "Yes, we did.", "No, we don't."],
+    answer: "Yes, we have."
+  },
+  {
+    question: "They ___ never visited Paris.",
+    options: ["have", "has", "had"],
+    answer: "have"
+  },
+  {
+    question: "Has he called you this morning?",
+    options: ["Yes, he has.", "Yes, he did.", "No, he doesn't."],
+    answer: "Yes, he has."
+  },
+  {
+    question: "Have you seen my keys?",
+    options: ["Yes, I have.", "Yes, I did.", "No, I don't."],
+    answer: "Yes, I have."
+  },
+  {
+    question: "We ___ just arrived.",
+    options: ["have", "has", "had"],
+    answer: "have"
+  },
+  {
+    question: "Have they ever tried skydiving?",
+    options: ["Yes, they have.", "No, they didn't.", "Yes, they do."],
+    answer: "Yes, they have."
+  },
+  {
+    question: "She ___ lived here for five years.",
+    options: ["have", "has", "had"],
+    answer: "has"
+  },
+  {
+    question: "Have you read that book?",
+    options: ["Yes, I have.", "Yes, I did.", "No, I don't."],
+    answer: "Yes, I have."
+  },
+  {
+    question: "Has your brother finished his work?",
+    options: ["Yes, he has.", "No, he didn't.", "Yes, he does."],
+    answer: "Yes, he has."
+  },
+  {
+    question: "I ___ never eaten sushi before.",
+    options: ["have", "has", "am"],
+    answer: "have"
+  },
+  {
+    question: "Have you visited the museum?",
+    options: ["Yes, I have.", "Yes, I did.", "No, I don't."],
+    answer: "Yes, I have."
+  },
+  {
+    question: "Has the team won the match?",
+    options: ["Yes, they have.", "No, they didn't.", "Yes, they do."],
+    answer: "Yes, they have."
   }
 ];
 
 let current = 0;
-let playerHP = 3;
-let enemyHP = 3;
+let playerHP = 10;
+let enemyHP = 25;
 
 function loadQuestion() {
   if (playerHP <= 0 || enemyHP <= 0) {
